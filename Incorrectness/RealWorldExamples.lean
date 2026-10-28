@@ -129,7 +129,7 @@ The bug categories covered here:
 | 3  | `>` vs `≥` in age verification              | no    | `incorrectness_auto` |
 | 4  | Logical AND vs OR in access control         | no    | `incorrectness_auto` |
 | 5  | Off-by-one: loop-counter starts at 0        | yes   | `incorrectness_auto` |
-| 6  | `≤` vs `<` in loop guard                     | yes   | `incorrectness_auto` |
+| 6  | `≤` vs `<` in loop guard                    | yes   | `incorrectness_auto` |
 | 7  | Loop runs one extra time                    | yes   | `incorrectness_auto` |
 | 8  | Two-stage validation, second stage skipped  | no    | `incorrectness_auto` |
 | 9  | Sequence of assertions that miss a case     | no    | `incorrectness_auto` |

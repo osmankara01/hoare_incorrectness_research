@@ -20,3 +20,7 @@ reverse-hoare.txt
 
 # LaTeX sources (reports, presentations — not project source)
 *.tex
+
+# Local experiments / learning material (not part of the project)
+HeapLangProposal.lean
+Tutorial/

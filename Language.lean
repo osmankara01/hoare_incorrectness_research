@@ -3,7 +3,7 @@ import Lean
 namespace Language
 -- 1. State Definition
 -- States map variable names (Strings) to values (Natural Numbers).
-def State := String → Nat
+def State := String → Nat -- Val
 
 -- State update function: s[name ↦ val]
 def State.update (name : String) (val : Nat) (s : State) : State :=
@@ -31,6 +31,8 @@ inductive BigStep : Stmt × State → State → Prop where
       BigStep (Stmt.skip, s) s
   | assign (x a s) :
       BigStep (Stmt.assign x a, s) (s[x ↦ a s])
+      -- x = y + 1
+      -- Stmt.assign x (y + 1)
   | seq (S T s t u)
         (hS : BigStep (S, s) t)
         (hT : BigStep (T, t) u) :
